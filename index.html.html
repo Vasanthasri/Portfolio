@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vasanthasri Thangaraj – AI Builder</title>
+<meta name="description" content="AI builder: LLM, RAG and computer-vision solutions, SAP integration, projects, education and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f3f4;--card:#fff;--ink:#1f2933;--muted:#5b6770;--line:#dbe0e3;--brand:#3d5a80;--teal:#4f8a80;--chip:#e6ebef;--chipink:#33495f;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151b20;--card:#1d252c;--ink:#e6ebee;--muted:#9eabb4;--line:#2d3841;--brand:#9db6d2;--teal:#86bfb3;--chip:#26313a;--chipink:#c3d2df;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151b20;--card:#1d252c;--ink:#e6ebee;--muted:#9eabb4;--line:#2d3841;--brand:#9db6d2;--teal:#86bfb3;--chip:#26313a;--chipink:#c3d2df;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,Arial,sans-serif;margin:0;line-height:1.08;letter-spacing:-.02em}
+a{color:var(--brand)}a:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.hero{background:#1b1f5e;color:#fff;padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:800}
+.hero .lede{margin:22px 0 28px;max-width:32em;font-size:1.12rem;color:#d4d8f5}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;margin:0 10px 10px 0}
+.btn.p{background:#3fd2bd;color:#0b1530}.btn.g{border:1.5px solid #8f98e8;color:#fff}
+.btn:focus-visible{outline:3px solid #fff}
+.me{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:26px}
+.mono{width:76px;height:76px;border-radius:20px;background:#3fd2bd;color:#0b1530;display:grid;place-items:center;font:800 1.9rem "Bricolage Grotesque",sans-serif;margin-bottom:18px}
+.me h2{font-size:1.35rem;color:#fff}.me p{margin:4px 0 0;color:#d4d8f5;font-size:.95rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)}
+.facts b{display:block;font:800 1.4rem "Bricolage Grotesque",sans-serif;color:#3fd2bd}.facts span{font-size:.85rem;color:#d4d8f5}
+section{padding:64px 0}
+.h{font-size:clamp(1.7rem,3.8vw,2.4rem);font-weight:800;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--brand);border-radius:14px;padding:24px}
+.card:nth-child(even){border-top-color:var(--teal)}
+.card h3{font-size:1.25rem}.when{color:var(--muted);font-size:.9rem;margin:4px 0 14px}
+.card p{margin:0 0 10px}.card p b{color:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{background:var(--chip);color:var(--chipink);font-size:.82rem;font-weight:500;padding:3px 10px;border-radius:99px}
+.edu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.deg{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
+.deg h3{font-size:1.5rem;margin-bottom:6px}.deg .col{font-weight:700;color:var(--brand)}
+.cgpa{display:flex;align-items:baseline;gap:8px;margin:20px 0 4px}.cgpa b{font:800 3.2rem/1 "Bricolage Grotesque",sans-serif;color:var(--teal)}
+.cert{margin-top:18px;padding:14px 16px;background:var(--chip);border-radius:10px;color:var(--chipink);font-weight:500}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 18px}
+.tl li::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:3px solid var(--bg)}
+.tl b{display:block;font-size:1.02rem}.tl span{color:var(--muted);font-size:.92rem}
+.exp .tl li::before{background:var(--brand)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.skills h3{font-size:1.1rem;margin-bottom:8px}.skills .chips{margin:0}
+footer{background:#1b1f5e;color:#fff;padding:64px 0 72px}
+footer h2{font-size:2rem;font-weight:800}footer p{color:#d4d8f5;margin:8px 0 18px}footer a{color:#3fd2bd;font-weight:700}
+@media (max-width:760px){.hero .wrap,.edu{grid-template-columns:1fr}.hero{padding:44px 0 52px}section{padding:48px 0}}
+.hero,footer{background:#263646}
+.btn.p{background:#9cc3b8;color:#17232d}
+.btn.g{border-color:#8da0ae}
+.mono{background:#9cc3b8;color:#17232d}
+.facts b,footer a{color:#a9cfc4}
+.hero .lede,.me p,.facts span,footer p{color:#cdd6dc}
+.me{background:rgba(255,255,255,.06)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>I turn messy business problems into AI tools people use.</h1>
+    <p class="lede">AI builder with a year of hands-on work in LLMs, RAG and computer vision. I find the problem, build the first working version in Python, and demo it to real customers.</p>
+    <a class="btn p" href="mailto:vasanthasrit@gmail.com">Email me</a><a class="btn g" href="https://www.linkedin.com/in/vasanthasri-thangaraj-b48395259/" rel="noopener">LinkedIn</a>
+  </div>
+  <aside class="me" aria-label="Profile summary">
+    <div class="mono" aria-hidden="true">VT</div>
+    <h2>Vasanthasri Thangaraj</h2><p>AI Builder, Forward Deployed Engineer at ERP Roots</p><p>Coimbatore, India</p>
+    <div class="facts"><div><b>50+</b><span>live customer demos</span></div><div><b>8.54</b><span>CGPA, B.Tech AI &amp; DS</span></div><div><b>7</b><span>projects shipped</span></div><div><b>1st</b><span>place, 24-hour hackathon</span></div></div>
+  </aside>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <h2 class="h">Selected projects</h2>
+  <p class="sub">Each one starts with a problem someone had. Client names and data are left out.</p>
+  <div class="grid">
+    <article class="card"><h3>Invoice automation into SAP</h3><div class="when">ERP Roots, 2025 to 2026</div>
+      <p><b>Problem:</b> Invoices were typed into SAP by hand.</p>
+      <p><b>Built:</b> A pipeline that reads invoices from email, extracts and validates fields with Gemini 2.0 Flash, and writes them to SAP through JCo/RFC. Later extended with OCR and an LLM for bilingual Arabic and English handwritten invoices, posting through OData.</p>
+      <div class="chips"><span>Python</span><span>Gemini</span><span>Microsoft Graph</span><span>TrOCR</span><span>OpenCV</span><span>JCo/RFC</span><span>OData</span></div></article>
+    <article class="card"><h3>Aceteroid, AI code generation for ABAP</h3><div class="when">ERP Roots, 2026, ongoing</div>
+      <p><b>Problem:</b> Writing, fixing and looking up ABAP objects takes developers a lot of time.</p>
+      <p><b>Built:</b> LLM-powered code generation, error fixing and object lookup inside the developer workflow, including a Java-based Eclipse ADT plugin. I wrote the Code-Pal prompt rulebook that keeps output in ABAP 7.5 clean-core style.</p>
+      <div class="chips"><span>LLM APIs</span><span>Prompt engineering</span><span>Java</span><span>Eclipse ADT</span><span>ABAP 7.5</span></div></article>
+    <article class="card"><h3>Paid Meta Ads Intelligence</h3><div class="when">ERP Roots, 2026</div>
+      <p><b>Problem:</b> Ad fatigue, wasted budget and rising CPM are hard to spot early.</p>
+      <p><b>Built:</b> A decision-support prototype that flags those patterns, adds weather and event demand signals across six South Indian cities, and writes an LLM narrative report for a client demo.</p>
+      <div class="chips"><span>Python</span><span>Streamlit</span><span>Meta Marketing API</span><span>LLM APIs</span></div></article>
+    <article class="card"><h3>Pre-migration intelligence system</h3><div class="when">ERP Roots, 2026, ongoing</div>
+      <p><b>Problem:</b> Data problems found late make a system migration risky.</p>
+      <p><b>Built:</b> Automated data-consistency checks, error flags and migration-readiness reports, plus documented graph-based dependency analysis.</p>
+      <div class="chips"><span>Python</span><span>Neo4j</span><span>Leiden clustering</span><span>BFS / DFS</span></div></article>
+    <article class="card"><h3>Demand identification tool</h3><div class="when">ERP Roots, 2025 to 2026</div>
+      <p><b>Problem:</b> Procurement teams need to know what the market wants.</p>
+      <p><b>Built:</b> A tool that scrapes market data in parallel, clusters it, and uses Gemini and Llama scoring to produce procurement recommendations.</p>
+      <div class="chips"><span>Web scraping</span><span>TF-IDF</span><span>K-Means</span><span>Gemini</span><span>Llama</span></div></article>
+    <article class="card"><h3>YouTube Content Educator</h3><div class="when">Personal project, 2025</div>
+      <p><b>Problem:</b> Long videos are slow to learn from.</p>
+      <p><b>Built:</b> A RAG app that answers questions grounded in a video’s transcript.</p>
+      <div class="chips"><span>LangChain</span><span>FAISS</span><span>Hugging Face</span><span>Llama3 on Groq</span></div></article>
+    <article class="card"><h3>Farm2Bag shopping chatbot</h3><div class="when">Personal project, 2024</div>
+      <p><b>Problem:</b> Browsing and filling a cart takes many taps.</p>
+      <p><b>Built:</b> A chatbot that finds products and manages the cart through chat and voice.</p>
+      <div class="chips"><span>DeepSeek LLM</span><span>Voice interaction</span></div></article>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 class="h">Education</h2>
+  <p class="sub">My degree, my certification, and the competitions where I’ve tested what I learned.</p>
+  <div class="edu">
+    <div class="deg">
+      <h3>B.Tech, Artificial Intelligence and Data Science</h3>
+      <div class="col">Kongu Engineering College</div>
+      <div class="cgpa"><b>8.54</b><span>CGPA out of 10</span></div>
+      <p style="margin:0;color:var(--muted)">Built the base for my work in machine learning, NLP and computer vision, then applied it through internships and projects.</p>
+      <div class="cert">Microsoft Azure certified, 2025</div>
+    </div>
+    <ol class="tl" aria-label="Achievements">
+      <li><b>1st place, AI Department 24-hour hackathon</b><span>Kongu Engineering College, 2024</span></li>
+      <li><b>3rd place, AI Department 24-hour hackathon</b><span>Kongu Engineering College, 2025</span></li>
+      <li><b>3rd place, paper presentation</b><span>Kongu Engineering College, 2023</span></li>
+      <li><b>Semi-finalist, Speak For India</b><span>Chennai, 2023</span></li>
+      <li><b>NASA Space Apps Challenge, global nominee</b><span>2023</span></li>
+    </ol>
+  </div>
+</div></section>
+
+<section class="exp" style="padding-top:0"><div class="wrap">
+  <h2 class="h">Experience</h2>
+  <ol class="tl" style="margin-top:28px">
+    <li><b>Forward Deployed Engineer, ERP Roots</b><span>June 2026 to present. Builds AI products, runs customer demos and turns customer feedback into requirements.</span></li>
+    <li><b>SAP ABAP and AI Developer Intern, ERP Roots</b><span>Sep 2025 to May 2026. Built the invoice automation and demand identification tools.</span></li>
+    <li><b>Data and AI Intern, Centillion Labs</b><span>Jan to Mar 2024. Improved a chatbot’s knowledge and retrieval, supported cybersecurity risk analysis, and earned the Feather on the Cap Award.</span></li>
+  </ol>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 class="h">Tools I build with</h2>
+  <div class="skills" style="margin-top:24px">
+    <div><h3>AI</h3><div class="chips"><span>Gemini</span><span>Anthropic</span><span>Groq / Llama3</span><span>DeepSeek</span><span>RAG</span><span>LangChain</span><span>FAISS</span><span>Vision LLMs</span></div></div>
+    <div><h3>Data and ML</h3><div class="chips"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span><span>OpenCV</span><span>SQL</span><span>Neo4j</span><span>Power BI</span><span>Tableau</span></div></div>
+    <div><h3>Integration</h3><div class="chips"><span>REST / OData</span><span>Microsoft Graph</span><span>Meta Marketing API</span><span>Streamlit</span><span>ABAP 7.5</span><span>RFC / JCo</span><span>S/4HANA</span></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <h2>Let’s talk</h2>
+  <p>If you have a problem that people keep working around, I’d like to hear about it.</p>
+  <p><a href="mailto:vasanthasrit@gmail.com">vasanthasrit@gmail.com</a></p>
+  <p style="margin:0"><a href="https://www.linkedin.com/in/vasanthasri-thangaraj-b48395259/" rel="noopener">linkedin.com/in/vasanthasri-thangaraj-b48395259</a></p>
+</div></footer>
+</body>
+</html>
